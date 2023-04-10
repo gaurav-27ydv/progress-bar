@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { TaskManager } from "./components/TaskManager";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <input
+        type="number"
+        value={val}
+        onChange={(e) => setVal(Number((e.target as HTMLInputElement).value))}
+      /> */}
+      {/* <RadialProgressBar
+        className="radial-progress"
+        // percentage={val}
+        maximumValue={val}
+        duration={10000}
+        progressColor="linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%)"
+        progressBackground="red"
+      /> */}
+      <TaskManager />
     </div>
   );
 }

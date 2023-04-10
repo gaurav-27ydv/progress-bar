@@ -1,0 +1,17 @@
+.outer-circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.inner-quarters {
+  position: absolute;
+  z-index: -1;
+  transform-origin: bottom left;
+  height: 50%;
+  width: 50%;
+}
